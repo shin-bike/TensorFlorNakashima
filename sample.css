@@ -1,0 +1,44 @@
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+	div {
+	background-color: #adFFFF; /*青色*/
+	}
+}
+
+@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+	div {
+	background-color: #FFadad; /*赤色*/
+	}
+}
+
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+	div {
+	background-color: #adFFad; /*緑色*/
+	}
+}
+
+.Video {
+	text-align: center;
+	display: block;
+	max-width: 100% ;
+	height: auto;
+}
+
+.button{
+	text-align: center;
+}
+
+.btn-square {
+	display: inline-block;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	background: #668ad8;/*ボタン色*/
+	color: #FFF;
+	border-bottom: solid 4px #627295;
+	border-radius: 3px;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);/*下に動く*/
+	border-bottom: none;/*線を消す*/
+}

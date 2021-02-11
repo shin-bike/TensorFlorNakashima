@@ -1,0 +1,27 @@
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <!-- Load the latest version of TensorFlow.js -->
+	<link rel="stylesheet" href="sample.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/knn-classifier"></script>
+	<title>画像認識サンプルプログラム</title>
+  </head>
+  <body>
+    <div id="console"></div>
+    <!-- Add an image that we will use to test -->
+	<div class="Video">
+		<video autoplay playsinline muted id="webcam"></video>
+	</div>
+	<div class="button">
+		<button id="class-a" class="btn-square">Add A</button>
+		<button id="class-b" class="btn-square">Add B</button>
+		<button id="class-c" class="btn-square">Add C</button>
+		<button id="class-d" class="btn-square">YourFace</button>
+	</div>
+    <!-- Load index.js after the content of the page -->
+    <script src="index.js"></script>
+  </body>
+</html>
